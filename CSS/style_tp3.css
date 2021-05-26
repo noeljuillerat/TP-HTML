@@ -1,0 +1,11 @@
+ol{
+    list-style-type:lower-greek;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    font-style: italic;
+}

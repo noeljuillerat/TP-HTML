@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_Ex8.css">
+    <title>Ex8</title>
+</head>
+<body>
+    <h1>Informations personnelles</h1>
+    <form action="/send" method="POST">
+    <fieldset>
+        <legend>Etat civil</legend>
+        <div>
+            <label for="civil">Civilité
+                <select name="civilité" id="civil">
+                    <option value="M">M</option>
+                    <option value="Mlle">Mlle</option>
+                    <option value="Mme">Mme</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="name">Nom
+                <input type="text" name="nom" id="name">
+            </label>
+        </div>
+        <div>
+            <label for="lastname">Prénom
+                <input type="text" name="prénom" id="lastname">
+            </label>
+        </div>
+        <div>
+            <label for="birthday">Date de naissance
+                <input type="date" name="naissance" id="birthday">
+            </label>
+        </div>
+        <div>
+            <div>
+            <label for="birthday_city">Commune de naissance
+                <input type="text" name="commune_naissance" id="birthday_city">
+            </div>
+            <div>
+                <select name="région" id="state">
+                    <option value="Ardenne">Ardenne</option>
+                    <option value="Grand_Est">Grand Est</option>
+                    <option value="Occitanie">Occitanie</option>
+                    <option value="Haut_de_France">Haut de France</option>
+                </select>
+            </div>
+            </label>
+        </div>
+        <div>
+    </fieldset>
+    <fieldset>
+        <legend>Coordonnées</legend>
+        <div>
+            <label for="phone">Téléphone
+                <input type="tel" name="tel" id="phone">
+            </label>
+        </div>
+        <div>
+            <label for="email">Courriel
+                <input type="email" name="mel" id="email">
+            </label>
+        </div>
+        <div>
+            <label for="web">Site Web
+                <input type="text" name="site" id="web">
+            </label>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Compétences</legend>
+        <div>
+            <label for="level">Niveau d'anglais
+                <input type="radio" name="niveau" id="ci"><label for="ci">CI</label>
+                <input type="radio" name="niveau" id="bi"><label for="bi">BI</label>
+                <input type="radio" name="niveau" id="ai"><label for="ai">AI</label>
+            </label>
+        </div>
+        <div>
+            <label for="language_info">Langages informatiques
+                <input type="radio" name="langage_info" id="html"><label for="html">HTML</label>
+                <input type="radio" name="langage_info" id="css"><label for="css">CSS</label>
+                <input type="radio" name="langage_info" id="jss"><label for="jss">JavaScript</label>
+                <input type="radio" name="langage_info" id="php"><label for="php">PHP</label>
+            </label>
+        </div>
+    </fieldset>
+    <button type="submit">Envoyer</button>
+    <button type="reset">Effacer</button>
+</form>
+</body>
+</html>
