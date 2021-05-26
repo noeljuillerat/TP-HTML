@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <section class="formulaire">
+        <form  method="post">
+            <fieldset>
+                <legend>Nom</legend>
+                <input type="text" name="nom" id="name" ><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Prénom</legend>
+                <input type="text" name="prenom" id="forname"><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Numéro de téléphone</legend>
+                <input type="tel" name="tel" id="phone"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="mel" id="email"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Canal de contact préféré</legend>
+                <select name="contact" id="canal" multiple>
+                    <option value="Email">Email</option>
+                    <option value="Téléphone">Téléphone</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <textarea name="message" id="text" cols="30" rows="10"></textarea>
+            </fieldset>
+            <button type="submit" >Envoyer</button>
+        </form>
+       
+    </section>
+</body>
+</html>
